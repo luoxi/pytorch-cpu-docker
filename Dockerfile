@@ -25,6 +25,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
     curl \
     unzip \
     unrar \
+    libpq-dev \
     && \
 
     $GIT_CLONE https://github.com/Kitware/CMake ~/cmake && \
