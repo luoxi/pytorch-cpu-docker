@@ -26,6 +26,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
   unzip \
   unrar \
   libpq-dev \
+  postgresql-client \
   && \
 
   $GIT_CLONE https://github.com/Kitware/CMake ~/cmake && \
@@ -92,6 +93,8 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
   gunicorn==20.0.4 \
   psycopg2==2.8.4 \
   Pillow==6.2.1 \
+  boto3==1.11.4 \
+  django-storages==1.8 \
   && \
 
 
